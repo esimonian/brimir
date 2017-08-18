@@ -47,7 +47,7 @@ gem 'pg', group: :postgresql
 # Optional MySQL for production
 gem 'mysql2', "~> 0.4", group: :mysql
 # Optional SQLite for development
-gem 'sqlite3', "~> 1.3", group: :sqlite
+#gem 'sqlite3', "~> 1.3", group: :sqlite
 
 
 # authentication
