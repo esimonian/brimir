@@ -11,8 +11,8 @@ addons:
 
 env:
   - DB=postgresql
-  - DB=mysql
-  - DB=sqlite3
+  - DB=postgresql
+  - DB=postgresql
 
 rvm:
   - 2.2.5
