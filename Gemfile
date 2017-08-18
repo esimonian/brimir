@@ -43,11 +43,12 @@ group :test do
 end
 
 # Optional PostgreSQL for production
-gem 'pg', "~> 0.19", group: :postgresql
+gem 'pg', group: :postgresql
 # Optional MySQL for production
 gem 'mysql2', "~> 0.4", group: :mysql
 # Optional SQLite for development
 gem 'sqlite3', "~> 1.3", group: :sqlite
+
 
 # authentication
 gem 'devise', "~> 4.2"
@@ -99,8 +100,7 @@ gem 'trix', "~> 0.10", ">= 0.10.1"
 gem 'react-rails', "~> 1.10"
 
 # Capistrano for deployment
-group :development do
   gem 'capistrano', '~> 3.8'
-  gem 'capistrano-rails', require: false
-  gem 'capistrano-bundler', require: false
-end
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"

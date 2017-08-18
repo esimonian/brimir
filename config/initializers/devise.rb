@@ -240,6 +240,8 @@ Devise.setup do |config|
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = "/my_engine/users/auth"
 
+   config.secret_key = 'e6e1ad305333b2277a8179e9d2bbf5f525308d424643a39ad303106e3d906990eff18071514bd7c1a036a53bb2b17f4181ce1baaa1cb3312043cfacf9e207ef5'
+
   config.omniauth :google_oauth2, Rails.application.secrets[:google_client_id],
       Rails.application.secrets[:google_client_secret]
 end
